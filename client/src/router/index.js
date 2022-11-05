@@ -9,14 +9,58 @@ const router = createRouter({
       name: "home",
       component: Home,
     },
-    //{
-    // path: "/about",
-    //name: "about",
+
+    //About
+    {
+      path: "/about-us",
+      name: "about",
     // route level code-splitting
     // this generates a separate chunk (About.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    //component: () => import("../views/AboutView.vue"),
-    //},
+    component: () => import("../views/About.vue"),
+    },
+
+    //Academics
+    {
+      path: "/academics",
+      name: "academics",
+      component: () => import("../views/Academics.vue"),
+    },
+
+    //Admission
+    {
+      path: "/admission",
+      name: "admission",
+      component: () => import("../views/Admission.vue"),
+    },
+
+       //Event
+    {
+      path: "/event",
+      name: "event",
+      component: () => import("../views/Event.vue"),
+    },
+
+    //Gallery
+    {
+      path: "/gallery",
+      name: "gallery",
+      component: () => import("../views/Gallery.vue"),
+    },
+
+    //Contact
+    {
+      path: "/contact-us",
+      name: "contact",
+      component: () => import("../views/Contact.vue"),
+    },
+
+    //404 Page
+    {
+      path: "/:pathMatch(.*)*",
+      name: "not-found",
+      component: () => import("../views/PageNotFound.vue"),
+    },
   ],
 });
 
