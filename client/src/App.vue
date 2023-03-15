@@ -17,11 +17,11 @@ defineProps({
       <nav class="sticky top-0 z-[100]">
       
         <!-- Navbar item  justify-between   -->
-        <div class="left-0 right-0 bg-white drop-shadow-lg flex justify-between lg:flex lg:justify-center lg:items-center py-4 px-2 md:px-12 mx-auto">
+        <div class="left-0 right-0 flex justify-between px-2 py-4 mx-auto bg-white drop-shadow-lg lg:flex lg:justify-center lg:items-center md:px-12">
       
           <!-- Navbar item first Div  -->
-          <div class="lg:hidden flex lg:justify-center items-center ">
-            <div class="bg-white py-4 px-2 flex flex-row ">
+          <div class="flex items-center lg:hidden lg:justify-center ">
+            <div class="flex flex-row px-2 py-4 bg-white ">
           
               <RouterLink to="/">
                 <img src="/images/logo.png" class="w-14 md:w-24" alt="logo">
@@ -35,7 +35,7 @@ defineProps({
           </div>
       
           <!-- Navbar item Second Div  -->
-          <div class="hidden lg:flex space-x-2">
+          <div class="hidden space-x-2 lg:flex">
       
             <!-- Home item nav  -->
             <div class="font-medium py-3 px-3 font-sans text-slate-800 hover:text-white hover:rounded hover:bg-[#2f499e]">
@@ -160,7 +160,7 @@ defineProps({
             </div>
           </div>
           <!-- Hamburger icon -->
-          <div class="lg:hidden mt-2 md:mt-4" @click="isOpen = !isOpen">
+          <div class="mt-2 lg:hidden md:mt-4" @click="isOpen = !isOpen">
       
             <svg xmlns="http://www.w3.org/2000/svg" v-show="isOpen" class="h-12 w-12 stroke-[#2f499e]" fill="none"
               viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -178,9 +178,9 @@ defineProps({
 
     <!-- For Viewing Router -->
     <RouterView  v-slot="{ Component }">
-      <transition  mode="out-in">
+     
         <component :is="Component" />
-      </transition>
+      
     </RouterView>
 
     <!-- Footer Section -->
@@ -189,7 +189,7 @@ defineProps({
           <!--  Footer Flex container -->
           <div class="p-6 bg-[#2f499e]">
             <div class="container">
-              <h3 class="text-white font-sans font-normal text-sm md:text-lg text-justify">
+              <h3 class="font-sans text-sm font-normal text-justify text-white md:text-lg">
                 &copy; 2018 - govermentcollage Owerri | All Rights Reserved | Powered by Acrnect technology
               </h3>
             </div>
@@ -200,7 +200,7 @@ defineProps({
   </div>
 </template>
 <style>
-/* Routview page transition */
+/* Routview page transition 
   .v-enter-active,
   .v-enter-active{
     transition: 600ms ease all;
@@ -211,7 +211,7 @@ defineProps({
     opacity: 0;
   }
 
-  /* Navbar transition */
+  Navbar transition 
     .mobile-active,
     .mobile-active {
       transition: 600ms ease all;

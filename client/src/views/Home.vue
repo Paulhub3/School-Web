@@ -19,10 +19,10 @@ AOS.init();
   <div>
 
     <!-- HOME LANDING PAGE DIV -->
-    <div class="flex flex-col mx-auto  lg:flex lg:flex-row px-6 lg:px-0 relative bg-slate-100 h-96 md:h-screen w-full" >
+    <div class="relative flex flex-col w-full px-6 mx-auto lg:flex lg:flex-row lg:px-0 bg-slate-100 h-96 md:h-screen" >
 
       <!--BACKGROUND BLOB -->
-      <span class="absolute w-full  animate-pulse opacity-75">
+      <span class="absolute w-full opacity-75 animate-pulse">
         <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
           <g transform="translate(261, -233)">
@@ -34,7 +34,7 @@ AOS.init();
       </span>
 
       <!--BACKGROUND BLOB Two -->
-      <span  class="absolute bottom-2 w-full animate-pulse opacity-30">
+      <span  class="absolute w-full bottom-2 animate-pulse opacity-30">
         <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
           <g transform="translate(-49, 209)">
@@ -46,18 +46,18 @@ AOS.init();
       </span>
 
       <!-- First Div -->
-      <div class="my-auto md:my-0 lg:my-auto z-40 space-y-5 py-6 lg:py-0 md:flex md:flex-col md:justify-center md:items-center container lg:justify-start lg:items-start mx-auto lg:ml-20">
+      <div class="container z-40 py-6 mx-auto my-auto space-y-5 md:my-0 lg:my-auto lg:py-0 md:flex md:flex-col md:justify-center md:items-center lg:justify-start lg:items-start lg:ml-20">
 
-        <h1 class="text-2xl md:text-4xl font-medium font-serif">
+        <h1 class="font-serif text-2xl font-medium md:text-4xl">
           Welcome To
         </h1>
         
 
-        <h1 class="text-xl md:text-3xl font-medium font-serif">
+        <h1 class="font-serif text-xl font-medium md:text-3xl">
           Government Boy's Secondary School
         </h1>
 
-        <h4 class="text-sm md:text-xl font-medium font-serif">
+        <h4 class="font-serif text-sm font-medium md:text-xl">
           Dirige Nos Domine (Lord, guide us)
         </h4>
 
@@ -67,40 +67,40 @@ AOS.init();
       </div>
 
       <!-- Second Div -->
-      <div class="relative h-64 hidden md:block mt-16 md:mt-12 md:ml-36 container lg:my-auto mx-auto">
+      <div class="container relative hidden h-64 mx-auto mt-16 md:block md:mt-12 md:ml-36 lg:my-auto">
 
         <!--Big Center Image size -->
         <div>
           <v-lazy-image src="/images/student.jpg" alt=""
-            class="w-full md:w-7/12 lg:w-9/12 object-contain  border-8 border-solid border-white rounded-md overflow-hidden  drop-shadow-lg shadow-lg absolute" />
+            class="absolute object-contain w-full overflow-hidden border-8 border-white border-solid rounded-md shadow-lg md:w-7/12 lg:w-9/12 drop-shadow-lg" />
         </div>
           
 
         <!--Top Right Image -->
-        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="z-40  absolute -right-5 -top-14 md:right-52 lg:right-32 lg:-top-20">
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="absolute z-40 -right-5 -top-14 md:right-52 lg:right-32 lg:-top-20">
           <v-lazy-image src="/images/student1.jpg"
-                class="w-28 md:w-36 lg:w-44  rounded-md object-contain  border-2 border-solid border-white  overflow-hidden  drop-shadow-lg shadow-lg"
+                class="object-contain overflow-hidden border-2 border-white border-solid rounded-md shadow-lg w-28 md:w-36 lg:w-44 drop-shadow-lg"
                 alt="" />
         </div>
 
         <!-- Top Left Image -->
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="z-40  absolute  -top-16">
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="absolute z-40 -top-16">
           <v-lazy-image src="/images/building.jpg"
-            class="w-24 md:w-32 lg:w-36 rounded-md object-contain  border-2 border-solid border-white  overflow-hidden  drop-shadow-lg shadow-lg"
+            class="object-contain w-24 overflow-hidden border-2 border-white border-solid rounded-md shadow-lg md:w-32 lg:w-36 drop-shadow-lg"
             alt="" />
         </div>
 
         <!--Bottom Right Image -->
-        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" class="z-40  absolute top-44  -right-5 md:right-60 lg:right-14 md:top-64">
+        <div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" class="absolute z-40 top-44 -right-5 md:right-60 lg:right-14 md:top-64">
           <v-lazy-image src="/images/boys.jpg"
-                class="w-24 md:w-36 lg:w-44 object-contain rounded-md border-2 border-solid border-white  overflow-hidden  drop-shadow-lg shadow-lg"
+                class="object-contain w-24 overflow-hidden border-2 border-white border-solid rounded-md shadow-lg md:w-36 lg:w-44 drop-shadow-lg"
                 alt="" />
         </div>
 
         <!--Bottom Left Image -->
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="z-40  absolute top-44 md:top-64">
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="absolute z-40 top-44 md:top-64">
           <v-lazy-image src="/images/children.jpg"
-            class=" w-24 md:w-36 lg:w-44 object-contain rounded-md border-2 border-solid border-white  overflow-hidden  drop-shadow-lg shadow-lg"
+            class="object-contain w-24 overflow-hidden border-2 border-white border-solid rounded-md shadow-lg  md:w-36 lg:w-44 drop-shadow-lg"
             alt="" />
         </div>
 
@@ -109,25 +109,25 @@ AOS.init();
     </div>
 
     <!-- Home Second Layout Section -->
-    <div data-aos="fade-up" data-aos-duration="3000" class="bg-gray-800 mt-6 md:h-80 lg:h-60">
+    <div data-aos="fade-up" data-aos-duration="3000" class="mt-6 bg-gray-800 md:h-80 lg:h-60">
       
       <!-- Flex Justify-between Container Two(2) Div's -->
-      <div class="grid grid-cols-1 gap-4 md:flex md:justify-between container drop-shadow-lg mx-auto px-6 py-12">
+      <div class="container grid grid-cols-1 gap-4 px-6 py-12 mx-auto md:flex md:justify-between drop-shadow-lg">
 
         <!-- First Div -->
-        <div class="space-y-4 w-full md:w-8/12">
+        <div class="w-full space-y-4 md:w-8/12">
 
           <!-- Heading Text -->
-          <h1 class="text-white  font-bold font-serif text-2xl md:text-4xl">Admission is open for 2022/2023 academic session.</h1>
+          <h1 class="font-serif text-2xl font-bold text-white md:text-4xl">Admission is open for 2022/2023 academic session.</h1>
 
           <!-- Paragraph -->
-          <p class="text-sm font-medium font-sans text-white">
+          <p class="font-sans text-sm font-medium text-white">
             We create learning experiences through the use of technology that will give our students an advantage in today's competitive world We offer both the Nigerian and the UK National curricular that will help create excellent students who will compete globally .
           </p>
         </div>
 
         <!-- Second Div with Two(2) Button Or Link -->
-        <div class="md:mt-4 lg: mt-0">
+        <div class="mt-0 md:mt-4 lg:">
           
           <!-- Button Or Link 1 -->
           <div class="font-medium py-3 drop-shadow-lg shadow-lg text-center px-4 font-san mb-4 border-b-4 border-[#455eb1]   hover:bg-[#455eb1] hover:border-[#1435a3] text-white bg-[#1d3da3] ">
